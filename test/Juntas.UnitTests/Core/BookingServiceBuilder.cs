@@ -1,7 +1,7 @@
 using Juntas.Core;
 using Moq;
 
-namespace Juntas.UnitTests
+namespace Juntas.UnitTests.Core
 {
     internal class BookingServiceBuilder
     {

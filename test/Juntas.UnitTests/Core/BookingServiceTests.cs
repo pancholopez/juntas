@@ -1,7 +1,7 @@
 using Juntas.Core;
 using Xunit;
 
-namespace Juntas.UnitTests
+namespace Juntas.UnitTests.Core
 {
     public class BookingServiceTests
     {
