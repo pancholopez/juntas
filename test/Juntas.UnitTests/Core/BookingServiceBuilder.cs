@@ -15,7 +15,7 @@ namespace Juntas.UnitTests.Core
         public void SetRoomAvailable(bool isAvailable)
         {
             var mock = new Mock<IRoomLookupService>();
-            mock.Setup(x => x.IsAvailable(It.IsAny<MeetingSchedule>())).Returns(isAvailable);
+            mock.Setup(x => x.IsAvailable(It.IsAny<string>(), It.IsAny<MeetingSchedule>())).Returns(isAvailable);
             _roomLookupService = mock.Object;
         }
 

@@ -2,6 +2,6 @@
 {
     public interface IRoomLookupService
     {
-        bool IsAvailable(MeetingSchedule schedule);
+        bool IsAvailable(string meetingRoomId, MeetingSchedule schedule);
     }
 }

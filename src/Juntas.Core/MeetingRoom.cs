@@ -2,6 +2,6 @@
 {
     public class MeetingRoom
     {
-        
+        public string Id { get; }
     }
 }

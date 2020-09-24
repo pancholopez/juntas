@@ -11,7 +11,7 @@
 
         public Result Process(Reservation reservation)
         {
-            if (!_roomLookupService.IsAvailable(reservation.Schedule)) return Result.Fail("Meeting Overlap");
+            if (!_roomLookupService.IsAvailable(reservation.MeetingRoomId, reservation.Schedule)) return Result.Fail("Meeting Overlap");
             return Result.Ok();
         }
     }
